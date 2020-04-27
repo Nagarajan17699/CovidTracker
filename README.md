@@ -6,6 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This Web-Application is created to track the number of Novel Corona Virus cases reported worldwide
 
+## URL 
+
+https://covidapp-5fd23.web.app/
+
 ## Frameworks Used
 
 Front End: Angular 9.1.1<br/>
