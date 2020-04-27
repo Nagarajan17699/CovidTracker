@@ -1,13 +1,13 @@
-Title: Covid Tracking Applicationo
-Date: 23-04-2020
-Author: Nagarajan 
-Technologies Used: 1. Html  2. Css 3. TypeScript
-Framework: Angular
-Extensions Used: Bootstrap, Chart.js
-API Used: https://www.covid19api.com
+Title: Covid Tracking Application<br/>
+Date: 23-04-2020<br/>
+Author: Nagarajan <br/>
+Technologies Used: 1. Html  2. Css 3. TypeScript<br/>
+Framework: Angular<br/>
+Extensions Used: Bootstrap, Chart.js<br/>
+API Used: https://www.covid19api.com<br/>
 
-Description:
-                This application is used to track the number of casualties in the corona pandemic
+Description:<br/>
+                This application is used to track the number of casualties in the corona pandemic<br/>
 
 Styling Description:
 
