@@ -1,0 +1,377 @@
+/*
+The Styling is Done in "CSS GRID" type and the page is divided into rows and columns.
+Columns are divided into 12 equal spaces with fr attribute and
+rows are divided based on the content 'auto' here refers to any number of space based on the requirement
+*/
+
+.contain{
+  display:grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-auto-rows: minmax(20px,auto);
+  grid-gap: 10px;
+} 
+
+/* .contain>div{
+  background-color: aqua;
+} */
+/* .contain>div:nth-child(even)
+{
+  background-color: coral;
+} */
+
+.title{
+  grid-row: 1/4;
+  grid-column: 1/13;
+  background-color: #5cdb95;  
+
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: auto 1px auto;
+}
+
+.title>button{
+grid-column: 12/13;
+grid-row: 1/2;
+justify-self: center;
+align-self: center;
+}
+
+/* HEAD STYLING */
+.head{
+  grid-row: 3/8;
+  grid-column: 1/13;
+  background-color: #edf5e1;
+  align-items: center;
+
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(12,1fr);
+}
+
+.head>div{
+  grid-row: 2/3;
+  grid-column: 5/10;
+  font-size: 35px;
+  font-family: 'Faustina', serif;
+}
+ 
+/* HEAD STYLING */
+
+
+/* INPUT STYLING */
+
+.inputsec{
+  grid-row:10/25 ;
+  grid-column: 1/6;
+  /* background-color: #fff; */
+ 
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(12,1fr);
+ 
+ }
+
+.inputsec>label{
+  grid-row: 2/3;
+  grid-column: 2/6;
+  align-self: center;
+}
+.inputsec>select{
+  grid-row: 2/3;
+  grid-column: 5/13;
+}
+
+.inputsec>button{
+  grid-row:4/5;
+  grid-column: 1/13;
+  justify-self: center;
+}
+
+.inputsec>div.stat{
+grid-row: 7/10;
+grid-column:5/13;
+justify-self: start;
+}
+
+/* INPUT STYLING */
+
+
+
+
+
+
+
+/* STATS STYLING */
+.chart{
+  grid-row:9/25 ;
+  grid-column: 6/13;
+  /* background-color: #fff; */
+
+}
+/* STATS STYLING */
+
+/* CHART STYLING */
+/* 
+.chart{
+ grid-row:25/41 ;
+ grid-column: 3/11;
+ background-color: #5cdb95;
+} */
+
+/* STATS STYLING */
+
+.footer{
+ grid-row:23/26 ;
+ grid-column: 1/13;
+ background-color: #5cdb95;
+ 
+}
+
+/* Button Styling */
+
+.button1{
+  border-radius: 5px;
+  border: 1.2px solid #000102;
+  height: 35px;
+  width: 350px;
+}
+
+.button1:hover{
+  box-shadow: .1px .1px .1px .1px rgb(0, 0, 0);
+  
+  color:#000000;
+}
+
+/* Button Styling */
+
+
+
+
+p {
+      margin: 0;
+    }
+
+  /* .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #19d2a4;
+    color: white;
+    font-weight: 600; 
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  } */
+
+ 
+/* 
+  .content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  } */
+  svg#clouds {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10; 
+    width: 1920px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  /* Responsive Styles */
+  @media screen and (max-width: 560px) {
+
+    .card-container > *:not(.circle-link) ,
+    .terminal {
+      width: 100%;
+    }
+
+    .card:not(.highlight-card) {
+      height: 16px;
+      margin: 8px 0;
+    }
+
+    .card.highlight-card span {
+      margin-left: 72px;
+    }
+
+    svg#rocket-smoke {
+      right: 120px;
+      transform: rotate(-5deg);
+    }
+
+
+    .contain{
+      display:grid;
+      grid-template-columns: repeat(8,1fr);
+      grid-auto-rows: minmax(5px,auto);
+
+    } 
+    
+    /* .contain>div{
+      background-color: aqua;
+    } */
+    /* .contain>div:nth-child(even)
+    {
+      background-color: coral;
+    } */
+    
+    .title{
+     
+      grid-row: 1/4;
+      grid-column: 1/13;
+      background-color: #5cdb95;
+     
+    
+      display: grid;
+      grid-template-columns: repeat(12,1fr);
+      grid-template-rows: auto 1px auto;
+    }
+    
+    .title>button{
+      display: none;
+    grid-column: 12/13;
+    grid-row: 1/2;
+    justify-self: stretch;
+    align-self: stretch;
+    }
+    
+    /* HEAD STYLING */
+    .head{
+      grid-row: 3/8;
+      grid-column: 1/13;
+      background-color: #edf5e1;
+      align-items: center;
+    
+      display: grid;
+      grid-template-rows: repeat(3,1fr);
+      grid-template-columns: repeat(10,1fr);
+    }
+    
+    .head>div{
+      grid-row: 1/4;
+      grid-column: 3/12;
+      font-size: 15px;
+      font-family: 'Faustina', serif;
+    }
+     
+    /* HEAD STYLING */
+    
+    
+    /* INPUT STYLING */
+    
+    .inputsec{
+      grid-row:8/20 ;
+      grid-column: 1/13;
+      /* background-color: #fff; */
+     
+      display: grid;
+      grid-template-columns: repeat(12,1fr);
+      grid-template-rows: repeat(12,1fr);
+     
+     }
+    
+    .inputsec>label{
+      grid-row: 2/3;
+      grid-column: 2/10;
+      align-self: center;
+    }
+    .inputsec>select{
+      grid-row: 3/4;
+      grid-column: 2/3;
+    }
+    
+    .inputsec>button{
+      grid-row:5/6;
+      grid-column: 1/13;
+      justify-self: center;
+    }
+    
+    .inputsec>div.stat{
+    grid-row: 7/9;
+    grid-column:1/12;
+    justify-self: center;
+    }
+    
+    /* INPUT STYLING */
+    
+    
+    
+    
+    /* STATS STYLING */
+    .chart{
+      grid-row:17/30 ;
+      grid-column: 1/13;
+     
+      /* background-color: #fff; */
+    
+    }
+    /* STATS STYLING */
+    
+    /* CHART STYLING */
+    /* 
+    .chart{
+     grid-row:25/41 ;
+     grid-column: 3/11;
+     background-color: #5cdb95;
+    } */
+    
+    /* STATS STYLING */
+    
+    .footer{
+     grid-row:30/32 ;
+     grid-column: 1/13;
+     background-color: #5cdb95;
+     
+    }
+    
+    /* Button Styling */
+    
+    .button1{
+      border-radius: 5px;
+      border: 1.2px solid #000102;
+      height: 35px;
+      width: 350px;
+    }
+    
+    .button1:hover{
+      box-shadow: .1px .1px .1px .1px rgb(0, 0, 0);
+      
+      color:#000000;
+    }
+    
+  }
+
+  @media screen and (max-width: 575px) {
+    svg#rocket-smoke {
+      display: none;
+      visibility: hidden;
+    }
+  }
