@@ -8,7 +8,7 @@ This Web-Application is created to track the number of Novel Corona Virus cases 
 
 ## Frameworks Used
 
-Front End: Angular 9.1.1
+Front End: Angular 9.1.1<br/>
 Graphics: Chart.js
 
 ## Api Used
